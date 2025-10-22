@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!--Khai báo HTML5 và meta viewport-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Sách NDL- Mua về nhà đọc n</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <!--Tên cửa hàng(h1)-->
+            <h1>
+                Cửa hàng Sách NDL
+            </h1>
+             <!--Thanh điều hướng-->       
+            <nav>
+                <a href="#">Trang chủ</a>
+                <a href="#san-pham">Sản phẩm</a>
+                <a href="#lien-he">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main--> 
+    <main>
+        
+        <!--Section giới thiệu chung -->
+        <section role="region" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Chào mừng đến với NDL!</h2>
+            <p>
+                Những cuốn sách hay nhất nên được mua về đọc chứ hem phải đọc chùa
+            </p>
+        </section>
+
+        <!---Section chứa danh sách sản phẩm -->
+        <section id="san-pham" role="region" aria-labelledby="product-heading">
+            <h2 id="product-heading">Sản Phẩm Nổi Bật</h2>
+            
+            <div>
+                
+                <!-- Sản phẩm 1 -->
+                <article>
+                    
+                    <h3>Tư Duy Nhanh và Chậm</h3>
+                    <p>Tác giả: Daniel Kahneman</p>
+                    <p>
+                        Khám phá hai hệ thống chi phối cách chúng ta suy nghĩ và đưa ra quyết định.
+                    </p>
+                    <p>
+                        99.000 <span>đ</span>
+                    </p>
+                </article>
+
+                <!-- Sản phẩm 2 -->
+                <article>
+                    
+                    <h3>HELO CA NHA</h3>
+                    <p>Tác giả: 123321</p>
+                    <p>
+                        Tiểu thuyết mô tả một xã hội dưới sự kiểm soát toàn diện của Chính phủ. Một tác phẩm cảnh báo sâu sắc về tự do và quyền lực.
+                    </p>
+                    <p>
+                        75.000 <span>đ</span>
+                    </p>
+                </article>
+                
+                <!-- Sản phẩm 3 -->
+                <article>
+                    
+                    <h3>Nhà Giả Kim</h3>
+                    <p>Tác giả: Paulo Coelho</p>
+                    <p>
+                        Câu chuyện cổ tích hiện đại về hành trình theo đuổi ước mơ của cậu bé chăn cừu Santiago. Khuyến khích mọi người dũng cảm theo đuổi Định Mệnh Cá Nhân.
+                    </p>
+                    <p>
+                        65.000 <span>đ</span>
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!--Form Liên hệ/Đăng ký nhận tin -->
+        <section id="lien-he" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Liên hệ với chúng tôi</h2>
+            <p>Đừng bỏ lỡ các ưu đãi và sách mới! Hãy điền thông tin bên dưới:</p>
+            
+            <form action="#" method="POST">
+                
+                <!-- Tên -->
+                <div>
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" name="name" required
+                           placeholder="Nhập tên của bạn">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required
+                           placeholder="Nhập địa chỉ email">
+                </div>
+                
+                <!-- Nội dung -->
+                <div>
+                    <label for="message">Thông điệp/Yêu cầu (Tùy chọn)</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Bạn muốn nhận thông tin gì?"></textarea>
+                </div>
+
+                <!-- Nút Gửi -->
+                <button type="submit">
+                    Gửi Đăng Ký
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!--- Footer -->
+    <footer>
+        <div>
+            <!-- footer -->
+            <p>&copy; 2025 Cửa hàng Sách NDL.</p>
+            <address>
+                Địa chỉ: Số 123 Đường Sách, Quận Tri Thức, TP.HCM
+            </address>
+        </div>
+    </footer>
+
+</body>
+</html>
