@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <!--Khai báo HTML5 và meta viewport-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng Sách NDL- Mua về nhà đọc n</title>
+    <!-- Thêm liên kết đến file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <!--Tên cửa hàng(h1)-->
+            <h1>
+                Cửa hàng Sách NDL
+            </h1>
+            <!--Thanh điều hướng--> 
+            <nav>
+                <!-- Dùng ul/li để chuẩn hóa cấu trúc menu -->
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#san-pham">Sản phẩm</a></li>
+                    <li><a href="#lien-he">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!--Main--> 
+    <main>
+        
+        <!--Section giới thiệu chung -->
+        <section class="intro" role="region" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Chào mừng đến với NDL!</h2>
+            <p>
+                Những cuốn sách hay nhất nên được mua về đọc chứ hem phải đọc chùa
+            </p>
+        </section>
+
+        <!---Section chứa danh sách sản phẩm -->
+        <section id="san-pham" role="region" aria-labelledby="product-heading">
+            <h2 id="product-heading">Sản Phẩm Nổi Bật</h2>
+            
+            <!-- Thêm ID để dễ dàng định kiểu Flexbox/Grid -->
+            <div id="product-list">
+                
+                <!-- Sản phẩm 1 -->
+                <article class="product-item">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSVUEEzhz12vM6t6JRFpjiLqBxwh0aThZRqzbzMA1jmVHYRTdxG6rTSJ7D8RbjviApZmPSjxIcwtEHN5WNTx5OOrjB0bWF1eQC2iXVNeZSkogkE2UNbcPwGMcuVleux3Mbt&usqp=CAc" 
+                         alt="Bìa sách Tư Duy Nhanh và Chậm">
+                    
+                    <h3>Tư Duy Nhanh và Chậm</h3>
+                    <p>Tác giả: Daniel Kahneman</p>
+                    <p class="product-description">
+                        Khám phá hai hệ thống chi phối cách chúng ta suy nghĩ và đưa ra quyết định.
+                    </p>
+                    <p class="product-price">
+                        99.000 <span>đ</span>
+                    </p>
+                </article>
+
+                <!-- Sản phẩm 2 -->
+                <article class="product-item">
+                    <img src="data:image/jpeg;base64,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" 
+                         alt="Bìa sách HELO CA NHA">
+                    
+                    <h3>HELO CA NHA</h3>
+                    <p>Tác giả: 123321</p>
+                    <p class="product-description">
+                        Tiểu thuyết mô tả một xã hội dưới sự kiểm soát toàn diện của Chính phủ. Một tác phẩm cảnh báo sâu sắc về tự do và quyền lực.
+                    </p>
+                    <p class="product-price">
+                        75.000 <span>đ</span>
+                    </p>
+                </article>
+                
+                <!-- Sản phẩm 3 -->
+                <article class="product-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT69LXkhdOyITgw2wo0mqarwC4jQEBfIHyHny5mg8_1mt0ktUsAanLzrSs&s" 
+                         alt="Bìa sách Nhà Giả Kim">
+                    
+                    <h3>Nhà Giả Kim</h3>
+                    <p>Tác giả: Paulo Coelho</p>
+                    <p class="product-description">
+                        Câu chuyện cổ tích hiện đại về hành trình theo đuổi ước mơ của cậu bé chăn cừu Santiago. Khuyến khích mọi người dũng cảm theo đuổi Định Mệnh Cá Nhân.
+                    </p>
+                    <p class="product-price">
+                        65.000 <span>đ</span>
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!--Form Liên hệ/Đăng ký nhận tin -->
+        <section id="lien-he" class="contact-form-section" role="region" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Liên hệ với chúng tôi</h2>
+            <p>Đừng bỏ lỡ các ưu đãi và sách mới! Hãy điền thông tin bên dưới:</p>
+            
+            <form action="#" method="POST" class="contact-form">
+                
+                <!-- Tên -->
+                <div>
+                    <label for="name">Họ và Tên</label>
+                    <input type="text" id="name" name="name" required
+                           placeholder="Nhập tên của bạn">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required
+                           placeholder="Nhập địa chỉ email">
+                </div>
+                
+                <!-- Nội dung -->
+                <div>
+                    <label for="message">Thông điệp/Yêu cầu (Tùy chọn)</label>
+                    <textarea id="message" name="message" rows="4"
+                              placeholder="Bạn muốn nhận thông tin gì?"></textarea>
+                </div>
+
+                <!-- Nút Gửi -->
+                <button type="submit" class="submit-button">
+                    Gửi Đăng Ký
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!--- Footer -->
+    <footer>
+        <div class="footer-content">
+            <!-- footer -->
+            <p>&copy; 2025 Cửa hàng Sách NDL.</p>
+            <address>
+                Địa chỉ: Số 123 Đường Sách, Quận Tri Thức, TP.HCM
+            </address>
+        </div>
+    </footer>
+
+</body>
+</html>
